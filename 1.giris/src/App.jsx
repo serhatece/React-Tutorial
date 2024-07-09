@@ -1,4 +1,5 @@
 import './App.css'
+import Hello from './Hello';
 
 function App() {
   // Jsx : {}
@@ -37,6 +38,7 @@ function App() {
           }} key={index}>{isim}</div>
         ))
       }
+      <Hello />
     </div>
   )
 }
