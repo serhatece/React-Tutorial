@@ -1,0 +1,48 @@
+.App{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-create{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.todo-input{
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    width: 100%;
+}
+
+.todo-create-button{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.todo-icons{
+    font-size: 25px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.main{
+    width: 500px;
+    display: flex;
+    flex-direction: column;align-items: center;
+    justify-content: center;
+}
