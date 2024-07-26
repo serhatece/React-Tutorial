@@ -1,8 +1,8 @@
 import './App.css'
 import Header from './components/Header'
-import ProductList from './components/ProductList'
 import PageContainer from './container/PageContainer'
-
+import RouterConfig from './config/RouterConfig'
+import Loading from './components/Loading'
 
 function App() {
 
@@ -10,7 +10,8 @@ function App() {
     <div>
       <PageContainer>
         <Header />
-        <ProductList />
+        <RouterConfig />
+        <Loading />
       </PageContainer>
     </div>
   )
