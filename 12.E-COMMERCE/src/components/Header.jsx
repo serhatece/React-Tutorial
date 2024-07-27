@@ -3,9 +3,11 @@ import '../css/Header.css';
 import { BsBasket3Fill } from "react-icons/bs";
 import { CiLight } from "react-icons/ci";
 import { FaMoon } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
 
+    const navigate = useNavigate();
     const [theme, setTheme] = useState(false);
     const changeTheme = () => {
         const root = document.getElementById("root");
@@ -21,7 +23,7 @@ function Header() {
     return (
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
             <div className='flex-row'>
-                <img className='logo' src='./src/img/logo2.png' />
+                <img onClick={() => navigate("/")} className='logo' src='./src/img/logo2.png' />
                 <p className='logo-text'>SERHAT ECE A.Ş</p>
             </div>
 

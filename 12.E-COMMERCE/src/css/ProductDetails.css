@@ -1,0 +1,52 @@
+.product-details {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-image {
+    margin-right: 40px;
+}
+
+.product-title {
+    font-family: Arial;
+}
+
+.product-description {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.product-price {
+    font-family: Arial;
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-icon {
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.quantity-count {
+    font-size: 30px;
+}
+
+.add-to-cart-button {
+    margin-left: 10px;
+    margin-top: 25px;
+    border: none;
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
