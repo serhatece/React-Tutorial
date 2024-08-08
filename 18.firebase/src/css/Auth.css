@@ -1,0 +1,92 @@
+.auth {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-div {
+    margin-bottom: 20px;
+}
+
+.input-div input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-div input:focus {
+    border-color: #888;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-google {
+    background: #dd4b39;
+    color: white;
+    width: calc(100% - 20px);
+    margin: 0 auto 20px;
+}
+
+.btn-google:hover {
+    background: #c23321;
+}
+
+.react-google-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-giriş,
+.btn-kaydol {
+    width: calc(50% - 10px);
+}
+
+.btn-giriş {
+    background: #4CAF50;
+    color: white;
+}
+
+.btn-giriş:hover {
+    background: #45A049;
+}
+
+.btn-kaydol {
+    background: #2196F3;
+    color: white;
+}
+
+.btn-kaydol:hover {
+    background: #1E88E5;
+}
