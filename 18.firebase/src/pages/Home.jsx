@@ -1,8 +1,25 @@
+import { useEffect, useState } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../Firebase";
 
 function Home() {
-    return (
-        <div>Home</div>
-    )
+  const [user, setUser] = useState("");
+
+  const getUserInfo = () => {
+    onAuthStateChanged(auth, (userCredentail) => {
+      if (userCredentail) {
+        setUser(userCredentail.email);
+      } else {
+        setUser("");
+      }
+    });
+  };
+
+  useEffect(() => {
+    getUserInfo();
+  }, []);
+
+  return <div style={{ margin: "10px", fontSize: "25px" }}>Merhaba {user}</div>;
 }
 
-export default Home
+export default Home;
