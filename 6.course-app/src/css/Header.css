@@ -1,13 +1,18 @@
-.header{
+.header {
     width: 100%;
     height: 70px;
-    background-color: rgb(96, 96, 248);
+    background: linear-gradient(90deg, rgba(96, 96, 248, 1) 0%, rgba(59, 59, 248, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.title{
-    font-family: 'Inter',sans-serif;
+.title {
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 28px;
     color: #fff;
-    padding: 25px 10px;
+    text-align: center;
+    padding: 0;
 }
