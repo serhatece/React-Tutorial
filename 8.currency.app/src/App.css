@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -6,4 +6,29 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px); /* Arka planı hafif bulanıklaştırma */
+}
+
+.currency-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.85); /* İçeriğin arka planını şeffaf yapma */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+}
+
+.currency-div:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
 }

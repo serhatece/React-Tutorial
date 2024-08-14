@@ -2,76 +2,120 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 50px;
-    width: 450px;
-    padding: 20px;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 30px;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 5px 5px 10px #cccccc, -5px -5px 10px #ffffff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .currency-div:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.amount, .result {
-    width: 80px;
-    height: 30px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 16px;
-}
-
-.from-currency-option, .to-currency-option {
-    width: 90px;
-    height: 35px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 16px;
-}
-
-.exchange-button {
-    width: 100px;
-    height: 35px;
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.exchange-button:hover {
-    background-color: #ff1a1a;
-    transform: scale(1.05);
+    box-shadow: 5px 5px 15px #bbbbbb, -5px -5px 15px #ffffff;
+    transform: translateY(-5px);
 }
 
 .header {
-    background-color: #333;
-    color: #fff;
+    background-color: #007BFF;
+    color: white;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px 10px 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.amount, .result {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #333;
+    background-color: #f1f1f1;
+    box-shadow: inset 5px 5px 10px #cccccc, inset -5px -5px 10px #ffffff;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.amount:focus, .result:focus {
+    box-shadow: inset 5px 5px 15px #bbbbbb, inset -5px -5px 15px #ffffff;
+    background-color: #e9e9e9;
+    outline: none;
+}
+
+.from-currency-option, .to-currency-option {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    color: #333;
+    box-shadow: inset 5px 5px 10px #cccccc, inset -5px -5px 10px #ffffff;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.from-currency-option:focus, .to-currency-option:focus {
+    box-shadow: inset 5px 5px 15px #bbbbbb, inset -5px -5px 15px #ffffff;
+    background-color: #e9e9e9;
+    outline: none;
 }
 
 .arrow-icon {
-    font-size: 30px;
-    margin-right: 10px;
-    color: #333;
-    margin-top: 15px;
+    font-size: 35px;
+    color: #007BFF;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow-icon:hover {
+    transform: rotate(90deg);
+    color: #0056b3;
+}
+
+.exchange-button {
+    width: 100%;
+    height: 45px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 5px 5px 15px #cccccc, -5px -5px 15px #ffffff;
+}
+
+.exchange-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 .error {
     color: red;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: bold;
+    text-align: center;
 }

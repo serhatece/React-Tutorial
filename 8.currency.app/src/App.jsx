@@ -1,13 +1,14 @@
-import './App.css'
-import Currency from './components/Currency'
+import "./App.css";
+import Currency from "./components/Currency";
 
 function App() {
-
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyItems: 'center', alignItems: 'center' }}>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
       <Currency />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
